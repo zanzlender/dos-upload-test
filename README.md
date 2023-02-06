@@ -8,7 +8,7 @@ How to clone and use this repo:
 4. **IMPORTANT!** Go to your Spaces bucket > Settings > Add CORS > Allowed headers and Origin should both be * , and select all methods for now
 5. Install and run app and try to upload something
 
-**P.S.** I didn't bother too much to make it look preety, so if you press Upload inside the uppy Dashboard it will show sucess, but only if you press the upload button below it will you get the response from Spaces printed out into the console
+**P.S.** I didn't bother too much to make it look pretty, so if you press Upload inside the Uppy Dashboard it will show sucess or failed, but only if you press the upload button below it will you get the response from Spaces printed out into the console.
 
 
 ## Demo
