@@ -21,6 +21,10 @@ const uppy = new Uppy({
           accept: 'application/json',
           'content-type': 'application/json',
         },
+        // We need to parse file type because we have to generate the full url of the file
+        // meaning we also need to decide on a new name for the file to be saved as.
+        // Usually you use UUIDs for that, but you still need the file type 
+        // e.g. https://www.smth.com/images/image123.jpeg
         body: JSON.stringify({
           fileType: file.type,
         }),
@@ -33,7 +37,7 @@ const uppy = new Uppy({
         method: resBody.method,
         url: resBody.url,
         headers: {
-          // I think this should be here but try without it
+          // I think these permissions should be here but you try without it
           'x-amz-acl': 'public-read',
         }
       }

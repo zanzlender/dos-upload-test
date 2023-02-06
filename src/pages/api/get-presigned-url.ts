@@ -1,3 +1,9 @@
+/** This api endpoint generates a signed url for uploading files.
+ *
+ * NOTE: this logic will always create a new UUID for the file, if you wish to
+ * overwrite your files you will need to implement some other logic
+ */
+
 import { NextApiRequest, NextApiResponse } from "next";
 import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
@@ -30,10 +36,11 @@ export default async function handler(
   // key for S3 where to upload {..path to folder}/fileName.fileType
   // we take the file extension and generate a random UUID for the image, cuz
   // otherwise images might overwrite themselves
+  // images/ is a folder named images inside my bucket
   // CHANGE THE DIRECTORY
   const key = `images/${randomUUID()}.${fileExtension}`;
 
-  // Generat presigned url for PUT method (upload or overwrite of file)
+  // Generate presigned url for PUT method (upload or overwrite of file)
   const command = new PutObjectCommand({
     Bucket: bucketName,
     Key: key,
