@@ -6,4 +6,5 @@ How to clone and use this repo:
 3. In /api/get-presigned-url change your **region in s3Client**, **bucketName** and path to your bucket/folder in the **key** variable
 4. **IMPORTANT!** Go to your Spaces bucket > Settings > Add CORS > Allowed headers and Origin should be * , and select all methods for now
 5. Install and run app and try to upload something
-6. I didn't bother too much to make it look preety, so if you press Upload inside the uppy Dashboard it will show sucess, but only if you press the upload button below it will you get the response printed out into the console
+
+**P.S.** I didn't bother too much to make it look preety, so if you press Upload inside the uppy Dashboard it will show sucess, but only if you press the upload button below it will you get the response printed out into the console
