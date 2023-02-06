@@ -1,4 +1,3 @@
-
 # DigitalOcean Spaces - upload test
 
 How to clone and use this repo:
