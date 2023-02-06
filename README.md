@@ -10,3 +10,9 @@ How to clone and use this repo:
 5. Install and run app and try to upload something
 
 **P.S.** I didn't bother too much to make it look preety, so if you press Upload inside the uppy Dashboard it will show sucess, but only if you press the upload button below it will you get the response from Spaces printed out into the console
+
+
+## Demo
+
+https://user-images.githubusercontent.com/44570474/216976765-cab0b676-33a8-468e-bd07-d624b7393c36.mp4
+
